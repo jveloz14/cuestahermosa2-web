@@ -1,504 +1,829 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>Cuesta Hermosa II</title>
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+
+  <title>Cuesta Hermosa II | Junta de Vecinos</title>
 
   <meta
     name="description"
-    content="Sitio oficial de la Junta de Vecinos de Cuesta Hermosa II."
+    content="Sitio oficial de la Junta de Vecinos de Cuesta Hermosa II. Información institucional, seguridad, ubicación y recursos para residentes."
   >
 
   <link rel="stylesheet" href="/styles.css">
 </head>
 
+
 <body>
 
-<header class="header">
-  <div class="nav">
 
-    <a href="#inicio" class="brand">
+  <!-- =========================
+       ENCABEZADO
+  ========================== -->
+
+  <header class="site-header">
+
+    <div class="nav-shell">
+
+      <a
+        href="#inicio"
+        class="brand"
+        aria-label="Cuesta Hermosa II"
+      >
+
+        <img
+          src="/assets/logo.png"
+          alt="Cuesta Hermosa II"
+        >
+
+      </a>
+
+
+      <nav
+        class="main-nav"
+        aria-label="Navegación principal"
+      >
+
+        <a href="#recursos">
+          Recursos
+        </a>
+
+        <a href="#comunidad">
+          Comunidad
+        </a>
+
+        <a href="#seguridad">
+          Seguridad
+        </a>
+
+        <a href="#junta">
+          Junta
+        </a>
+
+        <a href="#ubicacion">
+          Ubicación
+        </a>
+
+        <a
+          href="#contacto"
+          class="nav-cta"
+        >
+          Contacto
+        </a>
+
+      </nav>
+
+    </div>
+
+  </header>
+
+
+
+  <main>
+
+
+    <!-- =========================
+         PORTADA
+    ========================== -->
+
+    <section
+      class="hero"
+      id="inicio"
+      style="background-image:
+        linear-gradient(
+          90deg,
+          rgba(8,40,32,.92) 0%,
+          rgba(8,40,32,.77) 43%,
+          rgba(8,40,32,.23) 100%
+        ),
+        url('/assets/hero-residencial.png');
+      "
+    >
+
+      <div class="hero-overlay"></div>
+
+
+      <div class="hero-shell">
+
+
+        <div class="hero-copy">
+
+          <span class="eyebrow eyebrow-light">
+            Junta de Vecinos
+          </span>
+
+
+          <h1>
+            Cuesta Hermosa II
+          </h1>
+
+
+          <p class="hero-tagline">
+            Nuestra comunidad,<br>
+            nuestro hogar.
+          </p>
+
+
+          <p class="hero-description">
+            Información institucional, seguridad y recursos
+            para los residentes de Cuesta Hermosa II.
+          </p>
+
+
+          <div class="hero-actions">
+
+            <a
+              href="#recursos"
+              class="button button-light"
+            >
+              Recursos para residentes
+            </a>
+
+
+            <a
+              href="#contacto"
+              class="button button-outline-light"
+            >
+              Contacto
+            </a>
+
+          </div>
+
+        </div>
+
+
+
+        <div class="hero-note">
+
+          <span>
+            Vecinos informados
+          </span>
+
+          <strong>
+            Comunidades más seguras
+          </strong>
+
+        </div>
+
+
+      </div>
+
+    </section>
+
+
+
+    <!-- =========================
+         RECURSOS
+    ========================== -->
+
+    <section
+      class="section resources"
+      id="recursos"
+    >
+
+      <div class="shell">
+
+
+        <div class="section-intro">
+
+          <div>
+
+            <span class="eyebrow">
+              Para residentes
+            </span>
+
+            <h2>
+              Recursos principales
+            </h2>
+
+          </div>
+
+
+          <p>
+            Acceso rápido a los principales canales e informaciones
+            de Cuesta Hermosa II.
+          </p>
+
+        </div>
+
+
+
+        <div class="resource-grid">
+
+
+          <!-- SEGURIDAD -->
+
+          <a
+            class="resource-card"
+            href="#seguridad"
+          >
+
+            <span class="resource-index">
+              01
+            </span>
+
+
+            <div
+              class="resource-icon"
+              aria-hidden="true"
+            >
+
+              <svg viewBox="0 0 24 24">
+
+                <path
+                  d="M12 3l7 3v5c0 5-3 8-7 10-4-2-7-5-7-10V6z"
+                />
+
+                <path
+                  d="M9 12l2 2 4-4"
+                />
+
+              </svg>
+
+            </div>
+
+
+            <h3>
+              Seguridad
+            </h3>
+
+
+            <p>
+              Número de contacto y orientación básica
+              para reportes dentro del residencial.
+            </p>
+
+
+            <span class="resource-link">
+              Ver seguridad →
+            </span>
+
+          </a>
+
+
+
+          <!-- ADMINISTRACION -->
+
+          <a
+            class="resource-card"
+            href="#contacto"
+          >
+
+            <span class="resource-index">
+              02
+            </span>
+
+
+            <div
+              class="resource-icon"
+              aria-hidden="true"
+            >
+
+              <svg viewBox="0 0 24 24">
+
+                <path
+                  d="M3 5h18v14H3z"
+                />
+
+                <path
+                  d="M3 6l9 7 9-7"
+                />
+
+              </svg>
+
+            </div>
+
+
+            <h3>
+              Administración
+            </h3>
+
+
+            <p>
+              Consultas, sugerencias y asuntos administrativos
+              relacionados con nuestra comunidad.
+            </p>
+
+
+            <span class="resource-link">
+              Escribir →
+            </span>
+
+          </a>
+
+
+
+          <!-- JUNTA -->
+
+          <a
+            class="resource-card"
+            href="#junta"
+          >
+
+            <span class="resource-index">
+              03
+            </span>
+
+
+            <div
+              class="resource-icon"
+              aria-hidden="true"
+            >
+
+              <svg viewBox="0 0 24 24">
+
+                <path
+                  d="M4 20h16M6 20V9h12v11"
+                />
+
+                <path
+                  d="M9 9V5h6v4"
+                />
+
+              </svg>
+
+            </div>
+
+
+            <h3>
+              Junta de Vecinos
+            </h3>
+
+
+            <p>
+              Información institucional sobre la actual
+              Junta de Vecinos.
+            </p>
+
+
+            <span class="resource-link">
+              Conocer la Junta →
+            </span>
+
+          </a>
+
+
+
+          <!-- UBICACION -->
+
+          <a
+            class="resource-card"
+            href="#ubicacion"
+          >
+
+            <span class="resource-index">
+              04
+            </span>
+
+
+            <div
+              class="resource-icon"
+              aria-hidden="true"
+            >
+
+              <svg viewBox="0 0 24 24">
+
+                <path
+                  d="M12 21s6-5.1 6-11a6 6 0 10-12 0c0 5.9 6 11 6 11z"
+                />
+
+                <circle
+                  cx="12"
+                  cy="10"
+                  r="2"
+                />
+
+              </svg>
+
+            </div>
+
+
+            <h3>
+              Ubicación
+            </h3>
+
+
+            <p>
+              Referencia geográfica de Cuesta Hermosa II
+              en Santo Domingo.
+            </p>
+
+
+            <span class="resource-link">
+              Ver ubicación →
+            </span>
+
+          </a>
+
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+
+    <!-- =========================
+         NUESTRA COMUNIDAD
+    ========================== -->
+
+    <section
+      class="community"
+      id="comunidad"
+    >
+
+
+      <div
+        class="community-visual"
+        role="img"
+        aria-label="Entorno residencial tropical"
+        style="
+          background-image:
+          linear-gradient(
+            rgba(12,49,39,.05),
+            rgba(12,49,39,.05)
+          ),
+          url('/assets/Foto 1.png');
+        "
+      >
+      </div>
+
+
+
+      <div class="community-copy">
+
+        <span class="eyebrow">
+          Nuestra comunidad
+        </span>
+
+
+        <h2>
+          Un residencial organizado alrededor de sus residentes.
+        </h2>
+
+
+        <p>
+          Cuesta Hermosa II es una comunidad residencial ubicada
+          en Santo Domingo.
+        </p>
+
+
+        <p>
+          Este sitio reúne información institucional, recursos
+          y canales de contacto de la Junta de Vecinos, facilitando
+          a los residentes el acceso a información de uso frecuente.
+        </p>
+
+
+        <div class="community-signature">
+          Nuestra comunidad, nuestro hogar.
+        </div>
+
+      </div>
+
+
+    </section>
+
+
+
+    <!-- =========================
+         SEGURIDAD
+    ========================== -->
+
+    <section
+      class="security"
+      id="seguridad"
+    >
+
+      <div class="shell security-grid">
+
+
+        <div class="security-copy">
+
+          <span class="eyebrow eyebrow-light">
+            Seguridad
+          </span>
+
+
+          <h2>
+            Un canal directo para nuestra comunidad.
+          </h2>
+
+
+          <p>
+            Para reportar incidentes, intentos de acceso irregular
+            o situaciones sospechosas dentro del residencial,
+            comuníquese directamente con Seguridad.
+          </p>
+
+        </div>
+
+
+
+        <div class="security-card">
+
+
+          <span class="security-label">
+            Seguridad Cuesta Hermosa II
+          </span>
+
+
+          <a
+            class="security-phone"
+            href="tel:+18095494398"
+          >
+            (809) 549-4398
+          </a>
+
+
+          <a
+            class="button button-light full"
+            href="tel:+18095494398"
+          >
+            Llamar a Seguridad
+          </a>
+
+
+          <small>
+            Para situaciones de emergencia general,
+            comuníquese con el 911.
+          </small>
+
+
+        </div>
+
+
+      </div>
+
+    </section>
+
+
+
+    <!-- =========================
+         JUNTA
+    ========================== -->
+
+    <section
+      class="section board"
+      id="junta"
+    >
+
+      <div class="shell">
+
+
+        <div class="section-intro">
+
+
+          <div>
+
+            <span class="eyebrow">
+              Gestión 2026–2028
+            </span>
+
+            <h2>
+              Junta de Vecinos
+            </h2>
+
+          </div>
+
+
+          <p>
+            Representación institucional de la Junta
+            de Vecinos de Cuesta Hermosa II.
+          </p>
+
+
+        </div>
+
+
+
+        <div class="board-grid">
+
+
+          <article class="board-person">
+
+            <span>
+              Presidente
+            </span>
+
+            <h3>
+              José Antonio Rodríguez
+            </h3>
+
+          </article>
+
+
+
+          <article class="board-person">
+
+            <span>
+              Tesorera
+            </span>
+
+            <h3>
+              Katherine Aybar
+            </h3>
+
+          </article>
+
+
+
+          <article class="board-person">
+
+            <span>
+              Presidente del Comité de Ética
+            </span>
+
+            <h3>
+              Dr. Tulio Ramírez
+            </h3>
+
+          </article>
+
+
+        </div>
+
+
+      </div>
+
+    </section>
+
+
+
+    <!-- =========================
+         UBICACION
+    ========================== -->
+
+    <section
+      class="location"
+      id="ubicacion"
+    >
+
+      <div class="shell location-grid">
+
+
+        <div class="location-copy">
+
+          <span class="eyebrow">
+            Ubicación
+          </span>
+
+
+          <h2>
+            Cuesta Hermosa II
+          </h2>
+
+
+          <p>
+            Santo Domingo,<br>
+            República Dominicana.
+          </p>
+
+
+          <p class="location-detail">
+            Cuesta Hermosa II está ubicada en el sector
+            Cuesta Hermosa, en el Distrito Nacional.
+          </p>
+
+
+          <a
+            class="button button-dark"
+            href="https://www.google.com/maps/search/?api=1&query=Cuesta+Hermosa+II+Santo+Domingo+Dominican+Republic"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Abrir en Google Maps
+          </a>
+
+        </div>
+
+
+
+        <div class="map-card">
+
+          <img
+            src="/assets/mapa.png"
+            alt="Mapa de ubicación de Cuesta Hermosa II"
+          >
+
+
+          <div
+            class="map-pin"
+            aria-hidden="true"
+          >
+            <span></span>
+          </div>
+
+        </div>
+
+
+      </div>
+
+    </section>
+
+
+
+    <!-- =========================
+         CONTACTO
+    ========================== -->
+
+    <section
+      class="contact"
+      id="contacto"
+    >
+
+      <div class="shell contact-grid">
+
+
+        <div>
+
+          <span class="eyebrow eyebrow-light">
+            Contacto
+          </span>
+
+
+          <h2>
+            Estamos para ayudarte.
+          </h2>
+
+
+          <p>
+            Para inquietudes, consultas, sugerencias,
+            propuestas o asuntos administrativos relacionados
+            con nuestra comunidad.
+          </p>
+
+        </div>
+
+
+
+        <div class="contact-card">
+
+          <span>
+            Correo institucional
+          </span>
+
+
+          <a href="mailto:info@cuestahermosa2.org">
+            info@cuestahermosa2.org
+          </a>
+
+        </div>
+
+
+      </div>
+
+    </section>
+
+
+  </main>
+
+
+
+  <!-- =========================
+       FOOTER
+  ========================== -->
+
+  <footer class="footer">
+
+    <div class="shell footer-grid">
+
+
       <img
         src="/assets/logo.png"
         alt="Cuesta Hermosa II"
       >
-    </a>
-
-    <nav class="nav-links">
-      <a href="#comunicados">Comunicados</a>
-      <a href="#seguridad">Seguridad</a>
-      <a href="#junta">Junta Directiva</a>
-      <a href="#contacto" class="nav-contact">Contacto</a>
-    </nav>
-
-  </div>
-</header>
 
 
-<main>
+      <div class="footer-copy">
 
-  <!-- HERO -->
+        <strong>
+          Nuestra comunidad, nuestro hogar.
+        </strong>
 
-  <section class="hero" id="inicio">
+        <span>
+          © 2026 Junta de Vecinos Cuesta Hermosa II
+        </span>
 
-    <div class="hero-content">
-
-      <div class="hero-copy">
-
-        <div class="eyebrow">
-          Junta de Vecinos
-        </div>
-
-        <h1>
-          Cuesta<br>
-          Hermosa II
-        </h1>
-
-        <div class="hero-line"></div>
-
-        <p class="hero-lead">
-          Información institucional, seguridad y comunicaciones
-          para nuestra comunidad.
-        </p>
-
-        <div class="hero-actions">
-          <a href="#comunicados" class="button button-dark">
-            Ver comunicados
-          </a>
-
-          <a href="#contacto" class="button button-light">
-            Contactar la Junta
-          </a>
-        </div>
+        <span>
+          Santo Domingo, República Dominicana
+        </span>
 
       </div>
 
-
-      <div class="hero-panel">
-
-        <div class="panel-monogram">
-          CH<span>II</span>
-        </div>
-
-        <div class="panel-bottom">
-
-          <div class="panel-small">
-            Nuestra comunidad
-          </div>
-
-          <div class="panel-title">
-            Nuestro hogar.
-          </div>
-
-        </div>
-
-      </div>
 
     </div>
 
-  </section>
+  </footer>
 
-
-  <!-- RESIDENTES -->
-
-  <section class="resident-section">
-
-    <div class="container">
-
-      <div class="section-heading">
-
-        <div>
-          <div class="eyebrow">
-            Residentes
-          </div>
-
-          <h2>
-            Información a tu alcance
-          </h2>
-        </div>
-
-        <p>
-          Accede rápidamente a los principales canales e informaciones
-          de Cuesta Hermosa II.
-        </p>
-
-      </div>
-
-
-      <div class="resident-grid">
-
-        <a href="#comunicados" class="resident-card">
-
-          <div class="card-number">01</div>
-
-          <div class="card-icon">
-            <svg viewBox="0 0 24 24">
-              <path d="M4 5h16v14H4z"/>
-              <path d="M8 9h8M8 13h6"/>
-            </svg>
-          </div>
-
-          <h3>Comunicados</h3>
-
-          <p>
-            Avisos e informaciones oficiales emitidos por la Junta.
-          </p>
-
-          <span>Consultar →</span>
-
-        </a>
-
-
-        <a href="#seguridad" class="resident-card">
-
-          <div class="card-number">02</div>
-
-          <div class="card-icon">
-            <svg viewBox="0 0 24 24">
-              <path d="M12 3l7 3v5c0 5-3 8-7 10-4-2-7-5-7-10V6z"/>
-              <path d="M9 12l2 2 4-4"/>
-            </svg>
-          </div>
-
-          <h3>Seguridad</h3>
-
-          <p>
-            Contacto directo y orientaciones para residentes.
-          </p>
-
-          <span>Ver información →</span>
-
-        </a>
-
-
-        <a href="#contacto" class="resident-card">
-
-          <div class="card-number">03</div>
-
-          <div class="card-icon">
-            <svg viewBox="0 0 24 24">
-              <path d="M3 5h18v14H3z"/>
-              <path d="M3 6l9 7 9-7"/>
-            </svg>
-          </div>
-
-          <h3>Administración</h3>
-
-          <p>
-            Consultas, sugerencias y asuntos relacionados con la comunidad.
-          </p>
-
-          <span>Escribir →</span>
-
-        </a>
-
-      </div>
-
-    </div>
-
-  </section>
-
-
-  <!-- SEGURIDAD -->
-
-  <section class="security-section" id="seguridad">
-
-    <div class="security-inner">
-
-      <div>
-
-        <div class="eyebrow light">
-          Seguridad
-        </div>
-
-        <h2>
-          Un canal directo
-          para nuestra comunidad.
-        </h2>
-
-        <p>
-          Ante cualquier incidente, intento de acceso irregular
-          o situación sospechosa dentro del residencial, comuníquese
-          directamente con Seguridad.
-        </p>
-
-      </div>
-
-
-      <div class="security-contact">
-
-        <div class="security-label">
-          Seguridad Cuesta Hermosa II
-        </div>
-
-        <a href="tel:+18095494398" class="security-phone">
-          (809) 549-4398
-        </a>
-
-        <a href="tel:+18095494398" class="security-button">
-          Llamar a Seguridad
-        </a>
-
-      </div>
-
-    </div>
-
-  </section>
-
-
-  <!-- COMUNICADOS -->
-
-  <section class="communications" id="comunicados">
-
-    <div class="container">
-
-      <div class="section-heading">
-
-        <div>
-          <div class="eyebrow">
-            Información oficial
-          </div>
-
-          <h2>
-            Comunicados recientes
-          </h2>
-        </div>
-
-        <p>
-          Avisos y actualizaciones dirigidos a los residentes.
-        </p>
-
-      </div>
-
-
-      <div class="communication-list">
-
-        <article class="communication-item">
-
-          <div class="communication-date">
-            <span>06</span>
-            OCT 2026
-          </div>
-
-          <div class="communication-copy">
-
-            <div class="category">
-              Institucional
-            </div>
-
-            <h3>
-              Nuevo correo electrónico oficial
-            </h3>
-
-            <p>
-              La Junta de Vecinos pone a disposición de la comunidad
-              su nuevo canal institucional de contacto.
-            </p>
-
-          </div>
-
-          <a
-            href="mailto:info@cuestahermosa2.org"
-            class="communication-arrow"
-          >
-            →
-          </a>
-
-        </article>
-
-
-        <article class="communication-item">
-
-          <div class="communication-date">
-            <span>05</span>
-            OCT 2026
-          </div>
-
-          <div class="communication-copy">
-
-            <div class="category">
-              Seguridad
-            </div>
-
-            <h3>
-              Recomendaciones preventivas
-            </h3>
-
-            <p>
-              Recordamos a nuestros residentes mantener las medidas
-              básicas de prevención al entrar y salir del residencial.
-            </p>
-
-          </div>
-
-          <a href="#seguridad" class="communication-arrow">
-            →
-          </a>
-
-        </article>
-
-
-        <article class="communication-item">
-
-          <div class="communication-date">
-            <span>01</span>
-            OCT 2026
-          </div>
-
-          <div class="communication-copy">
-
-            <div class="category">
-              Junta Directiva
-            </div>
-
-            <h3>
-              Inicio del nuevo período de gestión
-            </h3>
-
-            <p>
-              La actual Junta Directiva inició su período correspondiente
-              a octubre de 2026 – septiembre de 2028.
-            </p>
-
-          </div>
-
-          <a href="#junta" class="communication-arrow">
-            →
-          </a>
-
-        </article>
-
-      </div>
-
-    </div>
-
-  </section>
-
-
-  <!-- JUNTA -->
-
-  <section class="board-section" id="junta">
-
-    <div class="container">
-
-      <div class="board-header">
-
-        <div>
-
-          <div class="eyebrow">
-            Gestión 2026–2028
-          </div>
-
-          <h2>
-            Junta Directiva
-          </h2>
-
-        </div>
-
-        <p>
-          Representación institucional de la Junta de Vecinos
-          de Cuesta Hermosa II.
-        </p>
-
-      </div>
-
-
-      <div class="board-grid">
-
-        <div class="board-person">
-          <div class="board-role">Presidente</div>
-          <div class="board-name">José Antonio Rodríguez</div>
-        </div>
-
-        <div class="board-person">
-          <div class="board-role">Tesorera</div>
-          <div class="board-name">Katherine Aybar</div>
-        </div>
-
-        <div class="board-person">
-          <div class="board-role">
-            Presidente Comite de Ética
-          </div>
-          <div class="board-name">Tulio Ramirez</div>
-        </div>
-
-      </div>
-
-    </div>
-
-  </section>
-
-
-  <!-- CONTACTO -->
-
-  <section class="contact-section" id="contacto">
-
-    <div class="contact-inner">
-
-      <div class="contact-copy">
-
-        <div class="eyebrow light">
-          Contacto
-        </div>
-
-        <h2>
-          Estamos para
-          escucharte.
-        </h2>
-
-        <p>
-          Para inquietudes, sugerencias, propuestas o asuntos
-          administrativos relacionados con nuestra comunidad.
-        </p>
-
-      </div>
-
-      <div class="contact-email">
-
-        <div class="contact-label">
-          Correo institucional
-        </div>
-
-        <a href="mailto:info@cuestahermosa2.org">
-          info@cuestahermosa2.org
-        </a>
-
-      </div>
-
-    </div>
-
-  </section>
-
-
-</main>
-
-
-<footer class="footer">
-
-  <div class="footer-inner">
-
-    <img
-      src="/assets/logo.png"
-      alt="Cuesta Hermosa II"
-    >
-
-    <div class="footer-copy">
-
-      <div>
-        Nuestra comunidad, nuestro hogar.
-      </div>
-
-      <small>
-        © 2026 Junta de Vecinos Cuesta Hermosa II
-      </small>
-
-    </div>
-
-  </div>
-
-</footer>
 
 </body>
+
 </html>
