@@ -1,0 +1,807 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+
+  <meta name="robots" content="noindex">
+
+  <title>
+    Solicitar acceso | Cuesta Hermosa II
+  </title>
+
+  <style>
+
+    :root {
+      --forest: #10372e;
+      --forest-deep: #082820;
+      --forest-soft: #355c50;
+
+      --green: #75954d;
+      --green-soft: #b8ca9b;
+
+      --cream: #f4f1e8;
+      --paper: #fbfaf7;
+      --white: #ffffff;
+
+      --line: #ded8cc;
+
+      --text: #202823;
+      --muted: #6e7771;
+    }
+
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+
+    body {
+      min-height: 100vh;
+
+      font-family:
+        -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        Helvetica,
+        Arial,
+        sans-serif;
+
+      background: var(--paper);
+
+      color: var(--text);
+
+      line-height: 1.6;
+    }
+
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+
+    img {
+      display: block;
+      max-width: 100%;
+    }
+
+
+    .shell {
+      width:
+        min(
+          1120px,
+          calc(100% - 48px)
+        );
+
+      margin-inline: auto;
+    }
+
+
+    /* HEADER */
+
+    .header {
+      background: var(--white);
+
+      border-bottom:
+        1px solid
+        rgba(16,55,46,.09);
+    }
+
+
+    .header-inner {
+      min-height: 88px;
+
+      display: flex;
+
+      align-items: center;
+
+      justify-content: space-between;
+
+      gap: 30px;
+    }
+
+
+    .logo {
+      width: 205px;
+    }
+
+
+    .back-link {
+      color: var(--forest);
+
+      font-size: 13px;
+
+      font-weight: 600;
+    }
+
+
+    /* HERO */
+
+    .hero {
+      padding:
+        85px 0 78px;
+
+      background:
+        var(--forest-deep);
+
+      color:
+        var(--white);
+    }
+
+
+    .eyebrow {
+      display: block;
+
+      margin-bottom: 18px;
+
+      color: var(--green-soft);
+
+      font-size: 10px;
+
+      font-weight: 700;
+
+      letter-spacing: .20em;
+
+      text-transform: uppercase;
+    }
+
+
+    .hero h1 {
+      max-width: 780px;
+
+      font-family:
+        Georgia,
+        "Times New Roman",
+        serif;
+
+      font-size:
+        clamp(
+          48px,
+          6vw,
+          78px
+        );
+
+      font-weight: 400;
+
+      line-height: .96;
+
+      letter-spacing: -.035em;
+    }
+
+
+    .hero p {
+      max-width: 650px;
+
+      margin-top: 25px;
+
+      color:
+        rgba(255,255,255,.68);
+
+      font-size: 16px;
+    }
+
+
+    /* CONTENIDO */
+
+    .content {
+      padding:
+        85px 0 110px;
+    }
+
+
+    .content-grid {
+      display: grid;
+
+      grid-template-columns:
+        .72fr 1.28fr;
+
+      gap: 75px;
+
+      align-items: start;
+    }
+
+
+    .instructions h2 {
+      color: var(--forest);
+
+      font-family:
+        Georgia,
+        "Times New Roman",
+        serif;
+
+      font-size: 39px;
+
+      font-weight: 400;
+
+      line-height: 1.05;
+    }
+
+
+    .instructions p {
+      margin-top: 20px;
+
+      color: var(--muted);
+    }
+
+
+    .notice {
+      margin-top: 35px;
+
+      padding-top: 23px;
+
+      border-top:
+        1px solid
+        var(--line);
+
+      color: var(--forest-soft);
+
+      font-size: 13px;
+    }
+
+
+    /* FORMULARIO */
+
+    .form-card {
+      padding: 42px;
+
+      background: var(--white);
+
+      border:
+        1px solid
+        var(--line);
+    }
+
+
+    .field {
+      margin-bottom: 25px;
+    }
+
+
+    label {
+      display: block;
+
+      margin-bottom: 8px;
+
+      color: var(--forest);
+
+      font-size: 12px;
+
+      font-weight: 700;
+    }
+
+
+    input,
+    textarea {
+      width: 100%;
+
+      padding:
+        14px
+        15px;
+
+      border:
+        1px solid
+        #d5d8d4;
+
+      border-radius: 4px;
+
+      background:
+        #ffffff;
+
+      color:
+        var(--text);
+
+      font: inherit;
+
+      font-size: 15px;
+    }
+
+
+    textarea {
+      min-height: 115px;
+
+      resize: vertical;
+    }
+
+
+    input:focus,
+    textarea:focus {
+      outline: none;
+
+      border-color:
+        var(--forest-soft);
+
+      box-shadow:
+        0 0 0 3px
+        rgba(117,149,77,.10);
+    }
+
+
+    .form-note {
+      margin:
+        4px 0 25px;
+
+      color: var(--muted);
+
+      font-size: 12px;
+    }
+
+
+    button {
+      width: 100%;
+
+      min-height: 52px;
+
+      border: none;
+
+      border-radius: 999px;
+
+      background:
+        var(--forest);
+
+      color:
+        var(--white);
+
+      cursor: pointer;
+
+      font-size: 14px;
+
+      font-weight: 700;
+    }
+
+
+    button:hover {
+      background:
+        var(--forest-soft);
+    }
+
+
+    .login-link {
+      margin-top: 24px;
+
+      text-align: center;
+
+      color: var(--muted);
+
+      font-size: 12px;
+    }
+
+
+    .login-link a {
+      color: var(--forest);
+
+      font-weight: 700;
+
+      text-decoration: underline;
+
+      text-underline-offset: 3px;
+    }
+
+
+    /* FOOTER */
+
+    footer {
+      padding:
+        38px 0;
+
+      background:
+        #071d17;
+
+      color:
+        rgba(255,255,255,.52);
+
+      font-size: 11px;
+    }
+
+
+    .footer-inner {
+      display: flex;
+
+      justify-content: space-between;
+
+      gap: 30px;
+    }
+
+
+    @media (max-width: 800px) {
+
+      .content-grid {
+        grid-template-columns: 1fr;
+
+        gap: 45px;
+      }
+
+    }
+
+
+    @media (max-width: 620px) {
+
+      .shell {
+        width:
+          calc(100% - 36px);
+      }
+
+
+      .header-inner {
+        min-height: 76px;
+      }
+
+
+      .logo {
+        width: 155px;
+      }
+
+
+      .back-link {
+        font-size: 11px;
+      }
+
+
+      .hero {
+        padding:
+          60px 0;
+      }
+
+
+      .hero h1 {
+        font-size: 48px;
+      }
+
+
+      .content {
+        padding:
+          60px 0 80px;
+      }
+
+
+      .form-card {
+        padding:
+          28px 22px;
+      }
+
+
+      .footer-inner {
+        flex-direction: column;
+      }
+
+    }
+
+  </style>
+</head>
+
+
+<body>
+
+
+  <header class="header">
+
+    <div class="shell header-inner">
+
+      <a href="/">
+
+        <img
+          class="logo"
+          src="/assets/logo.png"
+          alt="Cuesta Hermosa II"
+        >
+
+      </a>
+
+
+      <a
+        class="back-link"
+        href="/"
+      >
+        ← Volver al sitio principal
+      </a>
+
+    </div>
+
+  </header>
+
+
+
+  <main>
+
+
+    <section class="hero">
+
+      <div class="shell">
+
+        <span class="eyebrow">
+          Portal de Residentes
+        </span>
+
+        <h1>
+          Solicitud de acceso
+        </h1>
+
+        <p>
+          Si reside en Cuesta Hermosa II y aún no cuenta
+          con acceso al Portal de Residentes, complete
+          la información solicitada para iniciar el proceso
+          de validación.
+        </p>
+
+      </div>
+
+    </section>
+
+
+
+    <section class="content">
+
+      <div class="shell content-grid">
+
+
+        <div class="instructions">
+
+          <span class="eyebrow" style="color:#355c50;">
+            Acceso para residentes
+          </span>
+
+          <h2>
+            Validamos cada solicitud.
+          </h2>
+
+          <p>
+            El acceso al portal está reservado para residentes
+            autorizados de Cuesta Hermosa II.
+          </p>
+
+          <p>
+            Una vez recibida la solicitud, la Junta de Vecinos
+            verificará la información antes de autorizar
+            el correo indicado.
+          </p>
+
+          <div class="notice">
+            Completar este formulario no habilita el acceso
+            automáticamente.
+          </div>
+
+        </div>
+
+
+
+        <form
+          class="form-card"
+          id="accessForm"
+        >
+
+
+          <div class="field">
+
+            <label for="nombre">
+              Nombre y apellido
+            </label>
+
+            <input
+              id="nombre"
+              name="nombre"
+              type="text"
+              autocomplete="name"
+              required
+            >
+
+          </div>
+
+
+          <div class="field">
+
+            <label for="correo">
+              Correo que desea autorizar
+            </label>
+
+            <input
+              id="correo"
+              name="correo"
+              type="email"
+              autocomplete="email"
+              required
+            >
+
+          </div>
+
+
+          <div class="field">
+
+            <label for="vivienda">
+              Casa / residencia
+            </label>
+
+            <input
+              id="vivienda"
+              name="vivienda"
+              type="text"
+              required
+            >
+
+          </div>
+
+
+          <div class="field">
+
+            <label for="telefono">
+              Teléfono
+            </label>
+
+            <input
+              id="telefono"
+              name="telefono"
+              type="tel"
+              autocomplete="tel"
+              required
+            >
+
+          </div>
+
+
+          <div class="field">
+
+            <label for="comentario">
+              Información adicional
+            </label>
+
+            <textarea
+              id="comentario"
+              name="comentario"
+              placeholder="Opcional"
+            ></textarea>
+
+          </div>
+
+
+          <p class="form-note">
+            La información será utilizada exclusivamente
+            para validar la solicitud de acceso.
+          </p>
+
+
+          <button type="submit">
+            Enviar solicitud
+          </button>
+
+
+          <div class="login-link">
+
+            ¿Ya tienes acceso?
+
+            <a
+              href="https://residentes.cuestahermosa2.org"
+            >
+              Entrar al portal
+            </a>
+
+          </div>
+
+
+        </form>
+
+
+      </div>
+
+    </section>
+
+
+  </main>
+
+
+
+  <footer>
+
+    <div class="shell footer-inner">
+
+      <span>
+        Junta de Vecinos Cuesta Hermosa II
+      </span>
+
+      <span>
+        Nuestra comunidad, nuestro hogar.
+      </span>
+
+    </div>
+
+  </footer>
+
+
+
+  <script>
+
+    document
+      .getElementById("accessForm")
+      .addEventListener(
+        "submit",
+        function(event) {
+
+          event.preventDefault();
+
+
+          const nombre =
+            document
+              .getElementById("nombre")
+              .value
+              .trim();
+
+
+          const correo =
+            document
+              .getElementById("correo")
+              .value
+              .trim();
+
+
+          const vivienda =
+            document
+              .getElementById("vivienda")
+              .value
+              .trim();
+
+
+          const telefono =
+            document
+              .getElementById("telefono")
+              .value
+              .trim();
+
+
+          const comentario =
+            document
+              .getElementById("comentario")
+              .value
+              .trim();
+
+
+          const subject =
+            "Solicitud de acceso al Portal de Residentes";
+
+
+          const body =
+`SOLICITUD DE ACCESO AL PORTAL DE RESIDENTES
+
+Nombre:
+${nombre}
+
+Correo que desea autorizar:
+${correo}
+
+Casa / residencia:
+${vivienda}
+
+Teléfono:
+${telefono}
+
+Información adicional:
+${comentario || "No indicó"}
+
+---
+Solicitud enviada desde cuestahermosa2.org`;
+
+
+          const mailto =
+            "mailto:info@cuestahermosa2.org" +
+            "?subject=" +
+            encodeURIComponent(subject) +
+            "&body=" +
+            encodeURIComponent(body);
+
+
+          window.location.href =
+            mailto;
+
+        }
+      );
+
+  </script>
+
+
+</body>
+
+</html>
