@@ -556,6 +556,33 @@ h3 {
 }
 
 
+.hero-access-request {
+  margin-top: 14px;
+
+  font-size: 12px;
+}
+
+
+.hero-access-request a {
+  color:
+    rgba(
+      255,
+      255,
+      255,
+      0.72
+    );
+
+  text-decoration: underline;
+
+  text-underline-offset: 4px;
+}
+
+
+.hero-access-request a:hover {
+  color: var(--white);
+}
+
+
 .hero-note {
   position: absolute;
 
@@ -838,14 +865,6 @@ h3 {
   background: var(--forest);
 
   color: var(--white);
-
-  transition:
-    background 0.2s ease;
-}
-
-
-.portal-resource:hover {
-  background: var(--forest-deep);
 }
 
 
@@ -944,12 +963,16 @@ h3 {
 }
 
 
-.portal-resource-action {
+.portal-resource-actions {
   display: flex;
 
-  align-items: center;
+  flex-direction: column;
 
-  gap: 18px;
+  align-items: flex-start;
+
+  justify-content: center;
+
+  gap: 14px;
 
   padding-left: 30px;
 
@@ -961,6 +984,17 @@ h3 {
       255,
       0.18
     );
+}
+
+
+.portal-main-link {
+  display: flex;
+
+  align-items: center;
+
+  gap: 18px;
+
+  color: var(--white);
 
   white-space: nowrap;
 
@@ -970,12 +1004,34 @@ h3 {
 }
 
 
-.portal-resource-action span {
+.portal-main-link span {
   color: var(--green-soft);
 
   font-size: 21px;
 
   font-weight: 400;
+}
+
+
+.portal-request-link {
+  color:
+    rgba(
+      255,
+      255,
+      255,
+      0.70
+    );
+
+  font-size: 11px;
+
+  text-decoration: underline;
+
+  text-underline-offset: 4px;
+}
+
+
+.portal-request-link:hover {
+  color: var(--white);
 }
 
 
@@ -1729,7 +1785,7 @@ h3 {
 
 
 /* =========================
-   TABLET
+   TABLET GRANDE
 ========================= */
 
 @media (max-width: 1080px) {
@@ -1749,6 +1805,11 @@ h3 {
 
 }
 
+
+
+/* =========================
+   TABLET
+========================= */
 
 @media (max-width: 980px) {
 
@@ -1866,9 +1927,8 @@ h3 {
   }
 
 
-  .portal-resource-action {
-    grid-column:
-      2;
+  .portal-resource-actions {
+    grid-column: 2;
 
     padding-left: 0;
 
@@ -2095,6 +2155,13 @@ h3 {
   }
 
 
+  .hero-access-request {
+    text-align: center;
+
+    margin-top: 16px;
+  }
+
+
   .hero-note {
     margin-top: 42px;
   }
@@ -2162,10 +2229,14 @@ h3 {
   }
 
 
-  .portal-resource-action {
+  .portal-resource-actions {
     grid-column: auto;
 
+    padding-left: 0;
+
     padding-top: 20px;
+
+    border-left: none;
 
     border-top:
       1px solid
@@ -2180,6 +2251,11 @@ h3 {
 
   .portal-resource-copy h3 {
     font-size: 26px;
+  }
+
+
+  .portal-main-link {
+    white-space: normal;
   }
 
 
